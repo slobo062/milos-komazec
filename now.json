@@ -1,5 +1,7 @@
 {
     "version": 2,
-    "builds": [{ "src": "*.php", "use": "@now/php" }]
+    "builds": [{ "src": "*.php", "use": "@now/php" },
+        { "src": "./css/main.css", "use": "@now/html-minifier" }
+    ]
   }
   
