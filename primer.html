@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Primer padajuceg menija</title>
+</head>
+<body>
+  <style>
+    a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-family: sans-serif;
+    }
+    .main-nav {
+      position: relative;
+    }
+    .padajuci {
+      position: absolute;
+    }
+  .main-nav, .padajuci {
+    list-style: none;
+    margin: 0; padding: 0;
+  }
+
+  .main-nav li {
+    float: left;
+  }
+
+  .main-nav a {
+    width: 100px;
+    background-color: orange;
+    display: block;
+    margin: 5px 1px 0 1px;
+    transition: all .4s;
+    border-radius: 2px;
+  }
+  .main-nav a:hover {
+    background-color: indianred;
+    color: black;
+  }
+
+  .padajuci a {
+    margin-top: 0;
+  }
+  .padajuci li {
+    visibility: hidden;
+    float: none;
+    opacity: 0;
+    transition-property: opacity, visibility;
+    transition-duration: .4s, 0s;
+    transition-delay: 0s, .4s;
+  }
+  .main-nav li:hover > .padajuci li{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s, 0s;
+  }
+  </style>
+  <h4>Primer padajuceg menija sa VISIBILITY umesto DISPLAY</h4>
+  <ul class="main-nav">
+    <li><a href="#0">Pocenta</a></li>
+    <li><a href="#0">Glavni Link </a>
+      <ul class="padajuci">
+        <li><a href="#">Pod Link1</a></li>
+        <li><a href="#">Pod Link2</a></li>
+      </ul>
+    </li>
+    <li><a href="#0">O nama</a></li>
+  </ul>
+</body>
+</html>
