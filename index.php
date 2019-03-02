@@ -10,7 +10,7 @@
 
       <div class="header">
         <div class="brand">
-          <?php include 'layout/brand.php'; ?>
+            <?php include 'layout/brand.php'; ?>
         </div>
         <div class="main-nav">
           <?php include 'layout/main-nav.php'; ?>
